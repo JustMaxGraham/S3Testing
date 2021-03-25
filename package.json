@@ -1,0 +1,15 @@
+{
+  "name": "s3testing",
+  "version": "1.0.0",
+  "description": "Test code for uploading and downloading files from S3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.872.0",
+    "dotenv": "^8.2.0"
+  }
+}
