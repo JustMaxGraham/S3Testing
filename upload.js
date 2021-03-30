@@ -9,8 +9,6 @@ const ID = process.env.AWS_ID;
 const SECRET = process.env.AWS_SECRET;
 const BUCKET_NAME = process.env.AWS_BUCKET;
 
-//console.log('Bucket Name: ', BUCKET_NAME);
-
 const S3 = new AWS.S3({
     accessKeyId: ID,
     secretAccessKey: SECRET
@@ -31,7 +29,7 @@ const uploadFile = (file) => {
         if (err) {
             throw err;
         }
-        console.log('File Uploaded Succcessfully! ${data.Location}');
+        console.log(`File Uploaded Succcessfully! ${data.Location}`);
     });
 };
 
